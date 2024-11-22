@@ -9,7 +9,7 @@ export default function SelectAnimal({ onSelectAnimal }) {
         {animals.map((animal, index) => (
           <div key={index} className="animal-card" onClick={() => onSelectAnimal(animal.name)}>
             <img 
-              src={`../Assets/img/${animal.img}`} 
+              src={require(`../Assets/img/${animal.img}`)} 
               alt={animal.name} 
               className="animal-img"
             />

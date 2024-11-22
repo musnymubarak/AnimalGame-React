@@ -1,0 +1,15 @@
+/* Result.css */
+
+  h2 {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .win-text {
+    color: orange; /* Orange color for 'Win' */
+  }
+  
+  .lose-text {
+    color: orange; /* Orange color for 'Loose' */
+  }
+  

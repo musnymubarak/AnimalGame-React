@@ -1,0 +1,12 @@
+/* AnimalName.css */
+.animal-name-container {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .animal-name-text {
+    color: orange; 
+    text-transform: uppercase; 
+    font-size: 1.5rem; 
+  }
+  

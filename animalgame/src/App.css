@@ -1,38 +1,97 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  border: 3px solid orange;  /* Orange border */
+  padding: 10px 300px; /* Increased padding on the left and right */
+  display: inline-block;
+}
+
+hr {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.components-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.component {
+  flex: 1;
+  max-width: 350px;
+  min-width: 100px;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid orange;
+  text-align: center;
+}
+
+/* SelectAnimal component styling */
+.select-animal {
+  flex: 2;
+  max-width: 700px;
+}
+
+.select-animal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.select-animal-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.select-animal-grid img:hover {
+  transform: scale(1.1);
+}
+
+.animal-name-text {
+  text-transform: uppercase;
+  color: orange;
+}
+
+@media (max-width: 768px) {
+  .components-container {
+    flex-direction: column;
+    align-items: center;
   }
 }

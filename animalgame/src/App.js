@@ -2,6 +2,7 @@ import './App.css';
 import { useState, useEffect } from "react";
 import { animals } from './data/AnimalsDb';
 import AnimalName from './Components/AnimalName';
+import SelectAnimal from './Components/SelectAnimal';
 
 function App() {
 
@@ -12,10 +13,12 @@ function App() {
     setDisplayedAnimal(animals[randomIndex].name);
   }, []);
 
+
   return (
     <>
       <div>
         <AnimalName name={displayedAnimal} />
+        <SelectAnimal />
       </div>
     </>
   );
